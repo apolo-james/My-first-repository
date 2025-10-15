@@ -22,8 +22,9 @@ body{
     padding: 0;
     font-size: 1rem;
     line-height: 1rem;
+    min-width: 500px;
     max-width: 1440px;
-    background-color: var(--color-bg);
+    background-color: var(--color-bgtexts);
     color: var(--color-texts);
     font-family: 'Times New Roman', Times, serif;
     overflow-x: hidden;
@@ -44,7 +45,7 @@ h2 h3 h4 h5 h6{
     color: var(--color-accent1);
 }
 #nav{
-    background-color: hsla(0, 0%, 0%, 0.535);
+    background-color: var(--color-bgdark);
     margin: 0;
 }
 .containerxl{
@@ -123,7 +124,7 @@ h2 h3 h4 h5 h6{
 .aboutsectiontxt{
     color: var(--color-bgdark);
     margin: 0 2rem;
-    font-size: 48px;
+    font-size: 32px;
     max-width: 50%;
     line-height: 3rem;
     animation: text-appear both;
@@ -188,7 +189,7 @@ h2 h3 h4 h5 h6{
     color: var(--color-texts);
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem .7rem;
     border-radius: 1rem;
     letter-spacing: 3px;
 }
@@ -342,7 +343,7 @@ h2 h3 h4 h5 h6{
 }
 .containerofgallery{
     width: fit-content;
-    height: 400px;
+    height: 600px;
     margin: 4rem 0;
     overflow-y: scroll ;
 }
@@ -406,7 +407,7 @@ h2 h3 h4 h5 h6{
     
 }
 .actualskillscard img{
-    background-color: var(--color-texts-muted);
+    
     border-radius: 1rem;
     padding: 8px;
     width: 120px;
@@ -444,7 +445,7 @@ h2 h3 h4 h5 h6{
     color: var(--color-bgdark);
     text-decoration: none;
     background-color: var(--color-accent3);
-    padding:  4px 1rem;
+    padding:  .5rem 1rem;
     border-radius: 8px;
     font-size: 28px;
     font-weight: 900;
@@ -467,7 +468,7 @@ h2 h3 h4 h5 h6{
 .logoswrapper{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -628,9 +629,11 @@ form input{
     width: 100%;
     background-color: transparent;
     border: 0;
+    color: var(--color-accent3);
 }
 input::placeholder {
   color: var(--color-border);
+  font-family: 'Times New Roman', Times, serif;
 }
 .formlogo{
     
@@ -664,7 +667,7 @@ input::placeholder {
 @keyframes card-appear1 {
     0%{
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10px);
     }
     100%{
         opacity: 1;
@@ -722,7 +725,10 @@ input::placeholder {
     .fwchild:nth-child(3){
         display: none;
     }
-    
+    .verybottom{
+        
+        transform: scale(.8);
+    }
 }
 @supports not selector(::-webkit-scrollbar) {
   body {
